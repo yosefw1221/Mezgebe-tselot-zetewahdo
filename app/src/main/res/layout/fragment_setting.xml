@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="?attr/actionBarSize">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cardA">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="15dp"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/pref_language"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_language_black_24dp"
+                    android:drawablePadding="20dp"
+                    android:gravity="center_vertical"
+                    android:padding="5dp"
+                    android:text="@string/language"
+                    android:visibility="gone"
+                    android:textSize="19sp"
+                    android:drawableStart="@drawable/ic_language_black_24dp" />
+
+                <androidx.appcompat.widget.AppCompatCheckBox
+                    android:id="@+id/pref_theme"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginLeft="15dp"
+                    android:button="@drawable/toggle_nightmode"
+                    android:drawablePadding="100dp"
+                    android:padding="15dp"
+                    android:text="@string/theme_night"
+                    android:textSize="19sp" />
+
+                <View
+                    android:id="@+id/divider2"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="?android:attr/listDivider" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="20dp"
+                    android:gravity="left"
+                    android:padding="15dp"
+                    android:text="@string/feedback"
+                    android:textSize="15sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginBottom="25dp">
+
+                    <androidx.appcompat.widget.AppCompatImageButton
+                        android:id="@+id/pref_telegram"
+                        style="@style/Widget.AppCompat.Button.Borderless"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/ic_telegram" />
+
+                    <androidx.appcompat.widget.AppCompatImageButton
+                        android:id="@+id/pref_facebook"
+                        style="@style/Widget.AppCompat.Button.Borderless"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/ic_facebook" />
+
+                    <androidx.appcompat.widget.AppCompatImageButton
+                        android:id="@+id/pref_email"
+                        style="@style/Widget.AppCompat.Button.Borderless"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="20dp"
+                        app:srcCompat="@drawable/ic_gmail" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="3dp"
+            android:layout_marginBottom="5dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/pref_appearance_overview_bg"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/bg" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/pref_appearance_overview_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="@string/besmeab"
+                        android:textSize="20sp" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="15dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:drawableLeft="@drawable/ic_text_format_black_24dp"
+                            android:drawablePadding="10dp"
+                            android:padding="15dp"
+                            android:text="@string/font_style"
+                            android:textSize="19sp" />
+
+                        <androidx.appcompat.widget.AppCompatSpinner
+                            android:id="@+id/pref_appearance_font_style"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_marginStart="30dp"
+                            android:layout_marginLeft="30dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:drawableLeft="@drawable/ic_format_size_black_24dp"
+                            android:drawablePadding="10dp"
+                            android:padding="15dp"
+                            android:text="@string/font_size"
+                            android:textSize="19sp"
+                            app:drawableTint="#e90" />
+
+                        <androidx.appcompat.widget.AppCompatSeekBar
+                            android:id="@+id/pref_appearance_font_size"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginLeft="20dp"
+                            android:maxWidth="300dp"
+                            android:minWidth="150dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/pref_font_color_txt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:drawableLeft="@drawable/ic_format_color_text_black_24dp"
+                            android:drawablePadding="10dp"
+                            android:padding="15dp"
+                            android:text="@string/font_color_night"
+                            android:textSize="19sp" />
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/pref_appearance_font_color"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="30dp"
+                            android:background="@color/darkGray"
+                            android:layout_marginStart="30dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:drawableLeft="@drawable/ic_format_line_spacing_black_24dp"
+                            android:drawablePadding="10dp"
+                            android:padding="15dp"
+                            android:text="@string/spacing"
+                            android:textSize="19sp"
+                            app:drawableTint="#e0e" />
+
+                        <RadioGroup
+                            android:id="@+id/pref_spacing_group"
+                            android:orientation="horizontal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginStart="30dp">
+
+                            <androidx.appcompat.widget.AppCompatRadioButton
+                                android:id="@+id/pref_appearance_font_spacing1"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_margin="10dp"
+                                android:button="@drawable/spacing_small_toggle" />
+
+                            <androidx.appcompat.widget.AppCompatRadioButton
+                                android:id="@+id/pref_appearance_font_spacing2"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_margin="10dp"
+                                android:button="@drawable/spacing_medium_toggle" />
+
+                            <androidx.appcompat.widget.AppCompatRadioButton
+                                android:id="@+id/pref_appearance_font_spacing3"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_margin="10dp"
+                                android:button="@drawable/spacing_large_toggle" />
+                        </RadioGroup>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/pref_background_txt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:drawablePadding="10dp"
+                            android:padding="15dp"
+                            android:text="@string/background_night"
+                            android:textSize="19sp"
+                            app:drawableLeftCompat="@drawable/ic_format_color_text_black_24dp" />
+
+                        <RadioGroup
+                            android:id="@+id/pref_background_group"
+                            android:orientation="horizontal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="50dp"
+                            android:layout_marginStart="50dp">
+
+                            <androidx.appcompat.widget.AppCompatRadioButton
+                                android:id="@+id/pref_appearance_background_1"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:button="@drawable/pref_background_toggle"
+                                android:background="@drawable/bg_small"
+                                android:textColor="#fff"/>
+
+                            <androidx.appcompat.widget.AppCompatRadioButton
+                                android:id="@+id/pref_appearance_background_2"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                android:button="@drawable/pref_background_toggle"
+                                android:background="@drawable/bg_small"
+                                app:backgroundTint="@color/darkGray"
+                                android:padding="5dp" />
+
+                            <androidx.appcompat.widget.AppCompatRadioButton
+                                android:id="@+id/pref_appearance_background_3"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:background="@drawable/bg_small"
+                                android:button="@drawable/pref_background_toggle"
+                                app:backgroundTint="#6BCF0C32" />
+
+                            <androidx.appcompat.widget.AppCompatRadioButton
+                                android:id="@+id/pref_appearance_background_4"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                android:button="@drawable/pref_background_toggle"
+                                android:background="@drawable/bg_small"
+                                app:backgroundTint="#EE26C809" />
+
+                            <androidx.appcompat.widget.AppCompatRadioButton
+                                android:id="@+id/pref_appearance_background_color"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:button="@drawable/pref_background_toggle"
+                                android:background="@drawable/ic_palette" />
+                        </RadioGroup>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

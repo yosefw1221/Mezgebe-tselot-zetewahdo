@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">መዝገበ ጸሎት</string>
+    <string name="title_home">ዋና-ገጽ</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">መቼት</string>
+    <string name="store">መደብር</string>
+    <string name="home">ዋና-ገጽ</string>
+    <string name="download">አውርድ</string>
+    <string name="list">ማውጫ</string>
+    <string name="besmeab">በስመአብ ወወልድ ወመንፈስ \nቅዱስ አሀዱ አምላክ አሜን::</string>
+    <string name="font_style">Font Style</string>
+    <string name="font_size">የፊደል መጠን</string>
+    <string name="font_color">የፊደል ቀለም (ቀን)</string>
+    <string name="spacing">ክፍተት</string>
+    <string name="background">የጀርባ ምስል (ቀን)</string>
+    <string name="language">ቋንቋ</string>
+    <string name="feedback">ለአስተያየት</string>
+    <string name="confirm">ምረጥ</string>
+    <string name="cancel">አቋርጥ</string>
+    <string name="night_mode">night mode</string>
+    <string name="font_color_night">የፊደል ቀለም (ማታ)</string>
+    <string name="background_night">የጀርባ ምስል (ማታ)</string>
+    <string name="theme_night">ገፅታ (ማታ)</string>
+    <string name="theme">ገፅታ</string>
+    <string-array name="languages">
+        <item>ግዕዝ</item>
+        <item>አማርኛ</item>
+        <item>ትግሪኛ</item>
+        <item>Oromifa</item>
+    </string-array>
+</resources>

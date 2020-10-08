@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="circular_indicator" />
+    <declare-styleable name="circular_indicator">
+        <attr name="color" format="color"/>
+        <attr name="size" format="integer"/>
+        <attr name="active" format="integer"/>
+        <attr name="circle_size" format="dimension"/>
+    </declare-styleable>
+</resources>

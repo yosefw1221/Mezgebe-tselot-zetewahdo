@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "162372449702",
+    "firebase_url": "https://mezgebe-tselot-184da.firebaseio.com",
+    "project_id": "mezgebe-tselot-184da",
+    "storage_bucket": "mezgebe-tselot-184da.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:162372449702:android:3d996f6a05abb0b3a68b67",
+        "android_client_info": {
+          "package_name": "com.josystems.ethiopian.ortodox"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "162372449702-rrns1h1ma6rjp0437o8spksqprsd9b0m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDv2m0BoT-D2gsCisZxrEz5KweoSJwL4Ac"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "162372449702-rrns1h1ma6rjp0437o8spksqprsd9b0m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

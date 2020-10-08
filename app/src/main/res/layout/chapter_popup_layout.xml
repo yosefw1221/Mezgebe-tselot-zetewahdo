@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    >
+<androidx.cardview.widget.CardView
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    app:cardCornerRadius="3dp"
+    app:cardElevation="12dp"
+    android:layout_margin="10dp"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            app:tint="#111"
+            app:srcCompat="@drawable/ic_format_size_black_24dp"/>
+        <androidx.appcompat.widget.AppCompatSeekBar
+            android:id="@+id/popup_font_seekbar"
+            android:max="72"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content" />
+        <androidx.appcompat.widget.AppCompatCheckBox
+            android:id="@+id/popup_nightmode"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:button="@drawable/toggle_nightmode"/>
+    </LinearLayout>
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:background="?android:attr/listDivider" />
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_gravity="center_horizontal"
+        android:textStyle="bold"
+        android:text="@string/list"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/popup_recycler"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingBottom="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>
+</androidx.cardview.widget.CardView>
+</RelativeLayout>

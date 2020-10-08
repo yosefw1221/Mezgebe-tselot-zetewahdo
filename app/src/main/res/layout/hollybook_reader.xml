@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/holybook_parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg">
+    <RelativeLayout
+        android:id="@+id/reader_actionbar"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/readerPager"
+        android:layout_width="match_parent"
+        android:background="@drawable/reader_actionbar_bg"
+        android:gravity="center_vertical"
+        android:layout_height="50dp">
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/reader_back"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/ic_arrow_back_black_24dp"
+            />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:id="@+id/reader_indicator_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/reader_back"
+            android:layout_toLeftOf="@id/reader_outline"
+            android:layout_toEndOf="@id/reader_back"
+            android:layout_toStartOf="@id/reader_outline">
+            <com.josystems.ethiopian.ortodox.Component.CircularIndicator
+                android:id="@+id/reader_indicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/reader_outline"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitCenter"
+            android:layout_alignParentRight="true"
+            app:srcCompat="@drawable/ic_menu_black_24dp"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/readerPager"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:focusable="true"
+        android:clickable="true"
+        app:layout_constraintTop_toTopOf="@id/reader_actionbar"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.appcompat.widget.AppCompatButton xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/chapter_list_item_tv"
     style="@style/Widget.AppCompat.Button.Borderless"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:drawableStart="@drawable/ic_bookmark_black_24dp"
+    app:drawableLeftCompat="@drawable/ic_bookmark_black_24dp"
     android:gravity="center_vertical"
-    android:drawableLeft="@drawable/ic_bookmark_black_24dp"
     android:drawablePadding="15dp"
     android:padding="15dp"
     android:text="@string/store" />

@@ -4,79 +4,89 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    >
-    <androidx.cardview.widget.CardView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal">
+    <RelativeLayout
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:cardElevation="6dp"
-        app:cardCornerRadius="6dp"
-        app:cardUseCompatPadding="true">
-    <LinearLayout
-        android:layout_width="match_parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_width="wrap_content"
+        app:layout_constraintWidth_max="600dp"
         android:layout_height="wrap_content">
-        <androidx.appcompat.widget.AppCompatImageView
-            android:id="@+id/holybook_store_icon"
-            android:layout_width="160dp"
-            android:padding="5dp"
-            android:layout_gravity="center"
-            android:scaleType="fitCenter"
-            android:src="@drawable/mary"
-            android:layout_height="match_parent"/>
-        <LinearLayout
-            android:padding="1dp"
-            android:orientation="vertical"
+
+        <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
-            android:minWidth="300dp"
-            android:layout_height="wrap_content">
-            <androidx.appcompat.widget.AppCompatTextView
-                android:id="@+id/holybook_store_title"
-                android:layout_marginTop="20dp"
-                android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="ውዳሴ ማርያም"/>
-            <androidx.appcompat.widget.AppCompatTextView
-                android:id="@+id/holybook_store_description"
-                android:paddingTop="10dp"
-                android:paddingBottom="10dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="0ውዳሴ  ማርያም"/>
-            <com.google.android.material.chip.Chip
-                android:theme="@style/Theme.MaterialComponents.Light"
-                android:id="@+id/holybook_store_language"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="አማርኛ"/>
-            <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/holybook_store_download"
-                android:layout_marginRight="10dp"
-                android:layout_gravity="right"
-                style="@style/Widget.AppCompat.Button.Borderless"
-                android:textColor="@color/blue"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:drawableLeft="@drawable/ic_cloud_download_black_24dp"
-                android:drawablePadding="10dp"
-                android:text="@string/download"
-                android:drawableStart="@drawable/ic_cloud_download_black_24dp"
-                android:layout_marginEnd="10dp"
-                android:visibility="visible"
-                tools:ignore="RtlHardcoded" />
-            <ProgressBar
-                android:id="@+id/holybook_store_progressbar"
-                style="@style/Widget.AppCompat.ProgressBar"
-                android:layout_gravity="right"
-                android:layout_marginRight="20dp"
-                android:layout_marginBottom="10dp"
-                android:layout_width="30dp"
-                android:visibility="gone"
-                android:layout_height="30dp"
-                android:layout_marginEnd="20dp" />
-        </LinearLayout>
-    </LinearLayout>
-    </androidx.cardview.widget.CardView>
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:cardElevation="6dp"
+            app:cardCornerRadius="6dp"
+            app:cardUseCompatPadding="true">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/holybook_store_icon"
+                    android:layout_width="160dp"
+                    android:padding="10dp"
+                    android:layout_gravity="center"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/placeholder"
+                    android:layout_height="match_parent"/>
+                <LinearLayout
+                    android:padding="1dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/holybook_store_title"
+                        android:layout_marginTop="20dp"
+                        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/loading"/>
+                    <TextView
+                        android:id="@+id/holybook_store_description"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:paddingRight="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/loading"
+                        android:paddingEnd="10dp"
+                        tools:ignore="RtlSymmetry" />
+                    <com.google.android.material.chip.Chip
+                        android:theme="@style/Theme.MaterialComponents.Light"
+                        android:id="@+id/holybook_store_language"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/loading"/>
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/holybook_store_download"
+                        android:layout_marginRight="10dp"
+                        android:layout_gravity="right"
+                        style="@style/Widget.AppCompat.Button.Borderless"
+                        android:textColor="@color/blue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:drawableLeftCompat="@drawable/ic_cloud_download_black_24dp"
+                        android:drawablePadding="10dp"
+                        android:text="@string/download"
+                        android:layout_marginEnd="10dp"
+                        android:visibility="visible"
+                        tools:ignore="RtlHardcoded" />
+                    <ProgressBar
+                        android:id="@+id/holybook_store_progressbar"
+                        style="@style/Widget.AppCompat.ProgressBar"
+                        android:layout_gravity="right"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_width="30dp"
+                        android:visibility="gone"
+                        android:layout_height="30dp"
+                        android:layout_marginEnd="20dp" />
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

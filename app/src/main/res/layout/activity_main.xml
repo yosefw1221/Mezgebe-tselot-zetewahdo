@@ -5,9 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-
-
-    <com.josystems.ethiopian.ortodox.Component.CurvedBottomNavigation
+    <com.josystems.ethiopian.ortodox.component.CurvedBottomNavigation
         android:id="@+id/nav_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -16,11 +14,13 @@
         app:menu="@menu/bottom_nav_menu" />
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/main_fab"
-        app:srcCompat="@drawable/ic_bookmark_black_24dp"
+        app:srcCompat="@drawable/open_holybook_yellow"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="25dp"
-        app:elevation="15dp"
+        android:layout_marginBottom="22dp"
+        android:scaleType="fitCenter"
+        app:maxImageSize="36dp"
+        app:backgroundTint="@color/colorPrimary"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent" />

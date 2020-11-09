@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:paddingBottom="?attr/actionBarSize">
+        android:layout_height="match_parent">
+<!--        android:paddingBottom="?attr/actionBarSize"-->
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/cardB"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
@@ -25,20 +25,20 @@
                 android:layout_gravity="center_horizontal"
                 android:layout_margin="15dp"
                 android:orientation="vertical">
-
-                <androidx.appcompat.widget.AppCompatButton
-                    android:id="@+id/pref_language"
-                    style="@style/Widget.AppCompat.Button.Borderless"
+                <androidx.appcompat.widget.SwitchCompat
+                    android:id="@+id/pref_silent_when_praying"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:drawableLeft="@drawable/ic_language_black_24dp"
-                    android:drawablePadding="20dp"
-                    android:gravity="center_vertical"
-                    android:padding="5dp"
-                    android:text="@string/language"
-                    android:visibility="gone"
-                    android:textSize="19sp"
-                    android:drawableStart="@drawable/ic_language_black_24dp" />
+                    app:drawableLeftCompat="@drawable/ic_volume_off"
+                    android:drawablePadding="15dp"
+                    android:paddingLeft="5dp"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:textSize="18sp"
+                    android:checked="true"
+                    android:text="@string/silent_when_praying"
+                    android:paddingStart="5dp"
+                    tools:ignore="RtlSymmetry" />
 
                 <androidx.appcompat.widget.AppCompatCheckBox
                     android:id="@+id/pref_theme"
@@ -46,14 +46,13 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="5dp"
                     android:layout_marginLeft="15dp"
-                    android:button="@drawable/toggle_nightmode"
+                    app:buttonCompat="@drawable/toggle_nightmode"
                     android:drawablePadding="100dp"
                     android:padding="15dp"
                     android:text="@string/theme_night"
                     android:textSize="19sp" />
 
                 <View
-                    android:id="@+id/divider2"
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
                     android:layout_marginLeft="20dp"
@@ -104,7 +103,6 @@
             </LinearLayout>
 
         </androidx.cardview.widget.CardView>
-
 
         <androidx.cardview.widget.CardView
             android:id="@+id/cardA"
@@ -157,14 +155,13 @@
                         <androidx.appcompat.widget.AppCompatTextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:drawableLeft="@drawable/ic_text_format_black_24dp"
+                            app:drawableLeftCompat="@drawable/ic_text_format_black_24dp"
                             android:drawablePadding="10dp"
                             android:padding="15dp"
                             android:text="@string/font_style"
                             android:textSize="19sp" />
 
                         <androidx.appcompat.widget.AppCompatSpinner
-                            android:id="@+id/pref_appearance_font_style"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_margin="10dp"
@@ -180,7 +177,7 @@
                         <androidx.appcompat.widget.AppCompatTextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:drawableLeft="@drawable/ic_format_size_black_24dp"
+                            app:drawableLeftCompat="@drawable/ic_format_size_black_24dp"
                             android:drawablePadding="10dp"
                             android:padding="15dp"
                             android:text="@string/font_size"
@@ -206,7 +203,7 @@
                             android:id="@+id/pref_font_color_txt"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:drawableLeft="@drawable/ic_format_color_text_black_24dp"
+                            app:drawableLeftCompat="@drawable/ic_format_color_text_black_24dp"
                             android:drawablePadding="10dp"
                             android:padding="15dp"
                             android:text="@string/font_color_night"
@@ -229,7 +226,7 @@
                         <androidx.appcompat.widget.AppCompatTextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:drawableLeft="@drawable/ic_format_line_spacing_black_24dp"
+                            app:drawableLeftCompat="@drawable/ic_format_line_spacing_black_24dp"
                             android:drawablePadding="10dp"
                             android:padding="15dp"
                             android:text="@string/spacing"
@@ -249,21 +246,21 @@
                                 android:layout_width="30dp"
                                 android:layout_height="30dp"
                                 android:layout_margin="10dp"
-                                android:button="@drawable/spacing_small_toggle" />
+                                app:buttonCompat="@drawable/spacing_small_toggle" />
 
                             <androidx.appcompat.widget.AppCompatRadioButton
                                 android:id="@+id/pref_appearance_font_spacing2"
                                 android:layout_width="30dp"
                                 android:layout_height="30dp"
                                 android:layout_margin="10dp"
-                                android:button="@drawable/spacing_medium_toggle" />
+                                app:buttonCompat="@drawable/spacing_medium_toggle" />
 
                             <androidx.appcompat.widget.AppCompatRadioButton
                                 android:id="@+id/pref_appearance_font_spacing3"
                                 android:layout_width="30dp"
                                 android:layout_height="30dp"
                                 android:layout_margin="10dp"
-                                android:button="@drawable/spacing_large_toggle" />
+                                app:buttonCompat="@drawable/spacing_large_toggle" />
                         </RadioGroup>
                     </LinearLayout>
 
@@ -295,28 +292,27 @@
                                 android:id="@+id/pref_appearance_background_1"
                                 android:layout_width="40dp"
                                 android:layout_height="40dp"
-                                android:button="@drawable/pref_background_toggle"
-                                android:background="@drawable/bg_small"
-                                android:textColor="#fff"/>
+                                app:buttonCompat="@drawable/pref_background_toggle"
+                                android:background="@drawable/bg_small" />
 
                             <androidx.appcompat.widget.AppCompatRadioButton
                                 android:id="@+id/pref_appearance_background_2"
-                                android:layout_width="40dp"
-                                android:layout_height="40dp"
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
                                 android:layout_marginLeft="10dp"
                                 android:layout_marginRight="10dp"
-                                android:button="@drawable/pref_background_toggle"
-                                android:background="@drawable/bg_small"
-                                app:backgroundTint="@color/darkGray"
-                                android:padding="5dp" />
+                                app:buttonCompat="@drawable/pref_background_toggle"
+                                android:background="@drawable/whitebg"
+                                app:backgroundTint="#eee"
+                                android:padding="6dp" />
 
                             <androidx.appcompat.widget.AppCompatRadioButton
                                 android:id="@+id/pref_appearance_background_3"
                                 android:layout_width="40dp"
                                 android:layout_height="40dp"
                                 android:background="@drawable/bg_small"
-                                android:button="@drawable/pref_background_toggle"
-                                app:backgroundTint="#6BCF0C32" />
+                                app:buttonCompat="@drawable/pref_background_toggle"
+                                app:backgroundTint="@color/darkGray" />
 
                             <androidx.appcompat.widget.AppCompatRadioButton
                                 android:id="@+id/pref_appearance_background_4"
@@ -324,16 +320,16 @@
                                 android:layout_height="40dp"
                                 android:layout_marginLeft="10dp"
                                 android:layout_marginRight="10dp"
-                                android:button="@drawable/pref_background_toggle"
+                                app:buttonCompat="@drawable/pref_background_toggle"
                                 android:background="@drawable/bg_small"
-                                app:backgroundTint="#EE26C809" />
+                                app:backgroundTint="#639C1064" />
 
                             <androidx.appcompat.widget.AppCompatRadioButton
                                 android:id="@+id/pref_appearance_background_color"
                                 android:layout_width="40dp"
                                 android:layout_height="40dp"
-                                android:button="@drawable/pref_background_toggle"
-                                android:background="@drawable/ic_palette" />
+                                app:buttonCompat="@drawable/pref_background_toggle"
+                                android:background="@drawable/ic_pallete_layer" />
                         </RadioGroup>
                     </LinearLayout>
                 </LinearLayout>

@@ -1,7 +1,6 @@
 <resources>
-    <string name="app_name">መዝገበ ጸሎት</string>
-    <string name="title_home">ዋና-ገጽ</string>
-    <string name="title_dashboard">Dashboard</string>
+    <string name="app_name">መዝገበ ጸሎት ዘተዋህዶ</string>
+    <string name="title_home">የጸሎት መጽሀፍት</string>
     <string name="title_notifications">መቼት</string>
     <string name="store">መደብር</string>
     <string name="home">ዋና-ገጽ</string>
@@ -12,20 +11,21 @@
     <string name="font_size">የፊደል መጠን</string>
     <string name="font_color">የፊደል ቀለም (ቀን)</string>
     <string name="spacing">ክፍተት</string>
-    <string name="background">የጀርባ ምስል (ቀን)</string>
+    <string name="background">የገበታ ምስል (ቀን)</string>
     <string name="language">ቋንቋ</string>
     <string name="feedback">ለአስተያየት</string>
     <string name="confirm">ምረጥ</string>
     <string name="cancel">አቋርጥ</string>
     <string name="night_mode">night mode</string>
     <string name="font_color_night">የፊደል ቀለም (ማታ)</string>
-    <string name="background_night">የጀርባ ምስል (ማታ)</string>
+    <string name="background_night">የገበታ ምስል (ማታ)</string>
     <string name="theme_night">ገፅታ (ማታ)</string>
-    <string name="theme">ገፅታ</string>
-    <string-array name="languages">
-        <item>ግዕዝ</item>
-        <item>አማርኛ</item>
-        <item>ትግሪኛ</item>
-        <item>Oromifa</item>
-    </string-array>
+    <string name="theme">ገፅታ (ቀን)</string>
+    <string name="silent_when_praying">በፀሎት ጊዜ የስልኬ ድምፅ ይጥፋ</string>
+    <string name="loading">…</string>
+    <string name="tags">mezgebe tselot | wudase mariam| ውዳሴ ማርያም | ጸሎት |seyfe slase | orthodox | ethiopia | amharic | geez | tewahdo</string>
+    <string name="grant_notif_permision">ይህን አገልግሎት ለመጠቀም ለመተግበሪያው ፈቃድ ይስጡ！</string>
+    <string name="notification_permision_denied">ተከልክሏል！</string>
+    <string name="notif_granted">ተፈቅዷል！</string>
+    <string name="holy_book_icon">holy book icon</string>
 </resources>

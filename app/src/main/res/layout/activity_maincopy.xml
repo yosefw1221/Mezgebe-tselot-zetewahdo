@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/container"
+    android:background="@color/background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.josystems.ethiopian.ortodox.component.CurvedBottomNavigation
+        android:id="@+id/nav_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/windowBackground"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/bottom_nav_menu" />
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/main_fab"
+        app:srcCompat="@drawable/open_holybook_yellow"
+        android:layout_width="@dimen/fabSize"
+        android:layout_height="@dimen/fabSize"
+        android:layout_marginBottom="22dp"
+        android:scaleType="fitCenter"
+        app:maxImageSize="36dp"
+        app:backgroundTint="@color/colorPrimary"
+        android:layout_centerInParent="true"
+        android:layout_alignParentBottom="true"/>
+
+    <fragment
+        android:id="@+id/nav_host_fragment"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/nav_view"
+        app:defaultNavHost="true"
+        app:navGraph="@navigation/mobile_navigation" />
+
+</RelativeLayout>
